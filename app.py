@@ -1,5 +1,4 @@
 from flask import Flask, render_template, redirect, session, url_for
-from datetime import timedelta
 
 app = Flask(__name__)
 
