@@ -1,33 +1,25 @@
-from flask import Flask, render_template, redirect, session, url_for
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return redirect(url_for('ru_light'))
+    return redirect("/ru/light")
 
 @app.route("/en/dark")
 def en_dark():
-    session['theme'] = 'dark'
-    session['language'] = 'en'
     return render_template("dark_en.html")
 
 @app.route("/en/light")
 def en_light():
-    session['theme'] = 'light'
-    session['language'] = 'en'
     return render_template("light_en.html")
 
 @app.route("/ru/dark")
 def ru_dark():
-    session['theme'] = 'dark'
-    session['language'] = 'ru'
     return render_template("dark_rus.html")
 
 @app.route("/ru/light")
 def ru_light():
-    session['theme'] = 'light'
-    session['language'] = 'ru'
     return render_template("light_rus.html")
 
 @app.errorhandler(404)
@@ -40,3 +32,5 @@ def render_server_error(error):
 
 if __name__ == '__main__':
     app.run(port=5005, debug=True)
+
+

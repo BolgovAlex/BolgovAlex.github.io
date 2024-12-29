@@ -22,65 +22,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Темная тема */
 .dark-bg {
   background-color: #102D69;
   color: #fff;
 }
 
-.dark-bg .navbar {
-  background-color: #102D69;
+.dark-bg .navbar-toggler {
+  border: 1px solid #fff;
+  color: #fff;
 }
 
-.dark-bg .text-dark-40 {
-  color: rgba(255, 255, 255, 0.4);
-}
-
-.dark-bg .link-purple {
-  color: #DFC7F2;
-  border-color: #DFC7F2;
-}
-
-.dark-bg .btn-yellow {
-  background-color: #DCFF05;
-  color: #102D69;
-}
-
-.dark-bg .btn-yellow:hover {
-  background-color: #c4e004;
-  color: #102D69;
-}
-
-/* Светлая тема */
-.light-bg {
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-.light-bg .navbar {
-  background-color: #f8f9fa;
-}
-
-.light-bg .text-dark-40 {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.light-bg .link-purple {
-  color: #6f42c1;
-  border-color: #6f42c1;
-}
-
-.light-bg .btn-yellow {
-  background-color: #ffeb3b;
-  color: #212529;
-}
-
-.light-bg .btn-yellow:hover {
-  background-color: #fdd835;
-  color: #212529;
-}
-
-/* Общие стили */
 .font-color-blue {
   color: #102D69;
 }
@@ -101,7 +52,7 @@ body {
 
 .link-border-bottom {
   display: inline-block;
-  padding: 0;
+  padding:0;
   text-decoration: none;
   line-height: 1.3;
   border-bottom: 1px solid #6c757d;
@@ -110,10 +61,6 @@ body {
 
 .text-white.link-border-bottom {
   border-bottom: 1px solid #fff;
-}
-
-.text-dark.link-border-bottom {
-  border-bottom: 1px solid #212529;
 }
 
 .link-border-bottom:hover {
@@ -127,12 +74,9 @@ body {
   border-bottom: 1px solid rgba(255,255,255,.8);
 }
 
-.light-bg .link {
-  color: rgba(0,0,0,0.8);
-  border-bottom: 1px solid rgba(0,0,0,0.8);
-}
-
-.light-bg .link:hover {
+.link:hover {
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
   border-color: transparent;
 }
 
@@ -214,10 +158,6 @@ body {
   color: #DFC7F2 !important;
 }
 
-.light-bg .navbar .nav-link.link-purple {
-  color: #6f42c1 !important;
-}
-
 .navbar .nav-link.link-purple:hover {
   color: #DFC7F2 !important;
 }
@@ -240,7 +180,7 @@ h1.greeting-text {
 }
 
 .btn-yellow:hover {
-  background-color: #c4e004;
+  background-color: #c4e004;  /* Немного темнее при наведении */
   color: #102D69;
 }
 
@@ -253,12 +193,9 @@ h1.greeting-text {
   color: #DFC7F2 !important;
 }
 
-.text-dark-40 {
-  color: rgba(0, 0, 0, 0.4);
-}
-
 .text-white-40 {
-  color: rgba(255, 255, 255, 0.4);
+  color: #fff !important;
+  opacity: 0.4;
 }
 
 .position {
