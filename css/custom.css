@@ -1,6 +1,3 @@
-/* custom.css */
-
-/* Подключение шрифтов */
 @font-face {
     font-family: 'Navigo';
     src: url('../fonts/Navigo-Regular-Desktop.otf') format('opentype');
@@ -15,7 +12,6 @@
     font-style: normal;
   }
   
-  /* Общие стили */
   html {
     scroll-behavior: smooth;
   }
@@ -27,19 +23,16 @@
     transition: background-color 0.5s, color 0.5s;
   }
   
-  /* Светлая тема по умолчанию */
   body.light-theme {
     background-color: #ffffff;
     color: #000000;
   }
   
-  /* Темная тема */
   body.dark-theme {
     background-color: #102D69;
     color: #fff;
   }
   
-  /* Темные фоны для секций */
   .dark-bg {
     background-color: #102D69;
     color: #fff;
@@ -50,7 +43,6 @@
     color: #fff;
   }
   
-  /* Цвета текста */
   .font-color-blue {
     color: #102D69;
   }
@@ -72,14 +64,13 @@
     opacity: 0.4;
   }
   
-  /* Кнопки */
   .btn-yellow {
     background-color: #DCFF05;
     color: #102D69;
   }
   
   .btn-yellow:hover {
-    background-color: #c4e004;  /* Немного темнее при наведении */
+    background-color: #c4e004;
     color: #102D69;
   }
   
@@ -92,10 +83,9 @@
   }
   
   .btn-blue:hover {
-    background-color: #0f1a47; /* Темнее при наведении */
+    background-color: #0f1a47;
   }
   
-  /* Текстовые стили */
   .promo-text {
     font-size: 24px;
     opacity: .75;
@@ -113,7 +103,6 @@
     line-height: 35px;
   }
   
-  /* Ссылки с нижней границей */
   .link-border-bottom {
     display: inline-block;
     padding: 0;
@@ -174,7 +163,6 @@
     border-color: transparent;
   }
   
-  /* Логотип */
   .logo:hover {
     text-decoration: none;
     transition: .4s ease;
@@ -195,7 +183,6 @@
     margin-left: 6px;
   }
   
-  /* Навигационные ссылки */
   .navbar .nav-link.link-purple {
     color: #DFC7F2 !important;
   }
@@ -204,17 +191,10 @@
     color: #DFC7F2 !important;
   }
   
-  /* Секция позиции */
   .position {
     margin-left: 20px;
   }
   
-  /* Стили для анимации плавного переключения темы */
-  body {
-    transition: background-color 0.5s, color 0.5s;
-  }
-  
-  /* Дополнительные стили */
   .navigo-font {
     font-family: 'Navigo', sans-serif;
     font-weight: normal;
