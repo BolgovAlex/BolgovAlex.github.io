@@ -1,10 +1,11 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, session, url_for
 
 app = Flask(__name__)
+app.secret_key = '469834098630986304'
 
 @app.route("/")
 def main():
-    return redirect("/ru/light")
+    return redirect(url_for('ru_light'))
 
 @app.route("/en/dark")
 def en_dark():
